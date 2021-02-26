@@ -12,7 +12,6 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 //Fonction pour chaque coordonnée : Popup
 function onEachFeature(feature, layer) {
-    // does this feature have a property named popupContent?
     if (feature.properties && feature.properties.popupContent) {
         layer.bindPopup(feature.properties.popupContent);
     }
@@ -30,12 +29,6 @@ var GFIcon = L.icon({
     iconSize: [40, 40],
 });
 
-//  // Icone
-// var Icon = L.icon({
-//     iconUrl: document.location.origin + '/carto_event/wp-content/plugins/carto_event/assets/icon/icon.png',
-//     iconSize: [40, 40],
-// });
-
 // Affichage des points Referendum
 L.geoJSON(referendum, {
     pointToLayer: function (feature, latlng) {
@@ -43,14 +36,6 @@ L.geoJSON(referendum, {
     },
     onEachFeature: onEachFeature
 }).addTo(mymap);
-
-// // Affichage des points Results Tests
-// L.geoJSON(results, {
-//     pointToLayer: function (feature, latlng) {
-//         return L.marker(latlng, {icon:Icon});
-//     },
-//     onEachFeature: onEachFeature
-// }).addTo(mymap);
 
 // Affichage des points GF
 L.geoJSON(generation, {

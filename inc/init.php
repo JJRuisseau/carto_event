@@ -27,6 +27,7 @@ final class Init
             $service = self::instantiate($class);
             if(method_exists($service, 'register')){
                 $service->register();
+                
             }
         }
     }

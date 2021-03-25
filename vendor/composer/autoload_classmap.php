@@ -6,4 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Inc\\Api\\Callbacks\\CartoEventCallbacks' => $baseDir . '/inc/Api/Callbacks/CartoEventCallbacks.php',
+    'Inc\\Api\\SettingsApi' => $baseDir . '/inc/Api/SettingsApi.php',
+    'Inc\\Base\\Activate' => $baseDir . '/inc/Base/Activate.php',
+    'Inc\\Base\\BaseController' => $baseDir . '/inc/Base/BaseController.php',
+    'Inc\\Base\\CartoEventController' => $baseDir . '/inc/Base/CartoEventController.php',
+    'Inc\\Base\\Deactivate' => $baseDir . '/inc/Base/Deactivate.php',
+    'Inc\\Init' => $baseDir . '/inc/init.php',
 );

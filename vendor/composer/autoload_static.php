@@ -20,11 +20,22 @@ class ComposerStaticInita7f72013e72dbfaa6147db08953bdc52
         ),
     );
 
+    public static $classMap = array (
+        'Inc\\Api\\Callbacks\\CartoEventCallbacks' => __DIR__ . '/../..' . '/inc/Api/Callbacks/CartoEventCallbacks.php',
+        'Inc\\Api\\SettingsApi' => __DIR__ . '/../..' . '/inc/Api/SettingsApi.php',
+        'Inc\\Base\\Activate' => __DIR__ . '/../..' . '/inc/Base/Activate.php',
+        'Inc\\Base\\BaseController' => __DIR__ . '/../..' . '/inc/Base/BaseController.php',
+        'Inc\\Base\\CartoEventController' => __DIR__ . '/../..' . '/inc/Base/CartoEventController.php',
+        'Inc\\Base\\Deactivate' => __DIR__ . '/../..' . '/inc/Base/Deactivate.php',
+        'Inc\\Init' => __DIR__ . '/../..' . '/inc/init.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInita7f72013e72dbfaa6147db08953bdc52::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInita7f72013e72dbfaa6147db08953bdc52::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInita7f72013e72dbfaa6147db08953bdc52::$classMap;
 
         }, null, ClassLoader::class);
     }

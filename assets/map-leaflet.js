@@ -19,13 +19,13 @@ function onEachFeature(feature, layer) {
 
 // Icone Referendum
 var RFIcon = L.icon({
-    iconUrl: document.location.origin + '/carto_event/wp-content/plugins/carto_event/assets/icon/icon_rf.png',
+    iconUrl: document.location.origin + '/wp-content/plugins/carto_event-main/assets/icon/icon_rf.png',
     iconSize: [40, 40],
 });
 
  // Icone GF
 var GFIcon = L.icon({
-    iconUrl: document.location.origin + '/carto_event/wp-content/plugins/carto_event/assets/icon/icon_gf.png',
+    iconUrl: document.location.origin + '/wp-content/plugins/carto_event-main/assets/icon/icon_gf.png',
     iconSize: [40, 40],
 });
 

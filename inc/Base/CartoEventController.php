@@ -279,9 +279,9 @@ class CartoEventController extends BaseController
                 'features' => $features_gf,
             );
 
-            $url_ref = $this->plugin_path . '\assets\geodata\referendum.js';
+            $url_ref = $this->plugin_path . '/assets/geodata/referendum.js';
             
-            $url_gf = $this->plugin_path . '\assets\geodata\generation.js';
+            $url_gf = $this->plugin_path . '/assets/geodata/generation.js';
 
             $data_encode_ref = json_encode($new_data_ref);
             

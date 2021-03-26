@@ -552,7 +552,7 @@ class CartoEventController extends BaseController
         
         echo "<script src=\"https://unpkg.com/leaflet@1.7.1/dist/leaflet.js\"></script>";
         
-        echo "<script src=\"$this->plugin_url/assets/geodata/results.js\"></script>";
+        // echo "<script src=\"$this->plugin_url/assets/geodata/results.js\"></script>";
         
         echo "<script src=\"$this->plugin_url/assets/geodata/generation.js\"></script>";
         
